@@ -5,10 +5,11 @@
   <div class="panel-body">
   <%= image_tag @pin.image.url( :medium) %><br/>
   <strong>Description:</strong> <%= @pin.description %><br/>
-  <strong>Uploaded by:</strong> <%= @pin.user.name if @pin.user %><br/>
+  <strong>Pinned by:</strong> <%= @pin.user.name if @pin.user %><br/>
+  <strong>Uploaded Date:</strong> <%= @pin.image_updated_at %><br/><br/>
 <div class="panel-footer">
 <% if @pin.user == current_user %>
-<%= link_to 'Edit', edit_pin_path(@pin), class:'btn btn-primary' %> |
+<%= link_to 'Edit', edit_pin_path(@pin), class:'btn btn-success' %> |
 <% end %>
 <%= link_to 'Back', pins_path, class:'btn btn-primary' %>
 </div>

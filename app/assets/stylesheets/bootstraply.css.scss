@@ -1,6 +1,6 @@
 $white:#fff;
 $black:#000;
-$jumbotron-bg:#00cc99;
+/*$jumbotron-bg:#00cc99;*/
 $navbar-inverse-bg:#FA8072;
 $navbar-inverse-link-color:$white;
 $panel-body-padding:15px;
@@ -23,4 +23,10 @@ $thumbnail-border:$black;
 }
 #logo {
     color: #fff;
+}
+.jumbotron {
+    background-image: url("Earth.JPG");
+    background-size:cover;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
 }
